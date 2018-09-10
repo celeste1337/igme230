@@ -8,6 +8,7 @@ css for igme230 personal page, styling done by celeste unless noted otherwise
 * {
     padding: 0%;
     margin: 0%;
+    border: none;
 }
 
 body {
@@ -18,19 +19,31 @@ body {
 /*css for sidebar stuff goes below here*/
 .sidebar {
     width: 20%;
+    height: 100%;
+    position: fixed;
     background-color: black;
     color: whitesmoke;
+    padding-top: 5%;
 }
 
 /*round the image into a circle, give it a solid white border*/
 .sidebar img {
     max-width: 50%;
     border-radius: 100px;
-    border: 5px solid white;
+    border: 3px solid white;
+    margin-left: 25%;
+}
+
+.sidebar h2, h3, p {
+    padding-top: 5%;
+    text-align: center;
 }
 
 /*css for main div goes below here*/
 
 .main {
+    width: 80%;
+    height: 100%;
+    float: right;
     background-color: gray;
 }
