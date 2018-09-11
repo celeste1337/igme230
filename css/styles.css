@@ -20,8 +20,6 @@ body {
 .sidebar {
     width: 20%;
     height: 100%;
-    
-    
     position: fixed;
     background-color: black;
     color: whitesmoke;
