@@ -55,25 +55,16 @@ body {
 
 .main li {
     list-style-type: none;
-<<<<<<< HEAD
-    padding-bottom: 1%;
-    margin-top: 1%;
     padding-left: 3%;
-=======
-    padding-top: 2%;
->>>>>>> c199f7ee95ec666fc4f590f8db8d810438f96d5f
+    padding-top: 1em;
 }
 
 .title {
     color:#1a3868;
-<<<<<<< HEAD
     font-size: 2em;
     text-decoration: underline;
-    
 }
 
 a {
     color: #336dcc;
-=======
->>>>>>> c199f7ee95ec666fc4f590f8db8d810438f96d5f
 }
