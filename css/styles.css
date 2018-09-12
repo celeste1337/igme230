@@ -48,12 +48,11 @@ a {
 
 .main {
     width: 75%;
-    height: 100%;
     float: right;
     background-color: whitesmoke;
     padding-top: 5%;
     padding-left: 5%;
-    padding-bottom: 50%;
+    padding-bottom: 5%;
     font-size: 1.2em;
 }
 
