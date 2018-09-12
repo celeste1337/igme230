@@ -2,8 +2,6 @@
 css for igme230 personal page, styling done by celeste unless noted otherwise
 */
 
-
-
 /*universal selector to get rid of built-in spacing*/
 * {
     padding: 0%;
@@ -50,7 +48,7 @@ body {
     width: 75%;
     height: 100%;
     float: right;
-    background-color: gray;
+    background-color: whitesmoke;
     padding-top: 5%;
     padding-left: 5%;
     padding-bottom: 50%;
@@ -59,4 +57,8 @@ body {
 .main li {
     list-style-type: none;
     padding-top: 2%;
+}
+
+.title {
+    color:#1a3868;
 }
