@@ -22,6 +22,7 @@ body {
     background-color: black;
     color: whitesmoke;
     padding-top: 5%;
+    min-width: 18%;
     
 }
 
@@ -59,7 +60,7 @@ body {
     padding-left: 3%;
 }
 
-#title {
+.title {
     color:#1a3868;
     font-size: 2em;
     text-decoration: underline;
