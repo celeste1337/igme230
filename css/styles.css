@@ -59,24 +59,13 @@ body {
     padding-left: 3%;
 }
 
-.title {
+#title {
     color:#1a3868;
     font-size: 2em;
     text-decoration: underline;
     
 }
 
-.projects {
-    float: right;
-    height: 100%;
-    width: 50%;
-
-    background-color: orange;
-}
-
-.assignments {
-    width: 50%;
-    background-color: blue;
-    margin: 0;
-    
+a {
+    color: #336dcc;
 }
