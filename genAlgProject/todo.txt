@@ -1,0 +1,37 @@
+THINGS I DONT UNDERSTAND::
+[] is there an if/else that needs to surround the for loop that walks through indexes 0-8 in new gen stuff?
+
+[] doesnt inserting the nextgen just add more to the population array? is population array supposed to "store" the history of the program? -- is it ever supposed to reset/be emptied ?? //dumb question
+
+
+THINGS THAT NEED TO BE DONE::
+
+[x] build method in Genetics
+    [x] breed one new kid using selection, crossover, and mutation
+    [x] breed1() method has NO parameters
+        [x] select() one parent
+        [x] select() the other parent
+        [x] crossover on the two parents to create a new kid
+        [x] mutate the kid
+        [x] return the chromosome
+    [x] make another button for breed1()
+[] generate a new generation in Main
+    [x] in a function called by a breedGen button
+        [x] set up a local array in the function to store the next gen chroms
+        [] once that has 9 new chroms, run a for loop that walks through the array
+        [x] uses each chrom to insert/update an individual in the genetics object at a specific index
+        [x] reset the corresponding huegrid in the array of huegrids at the same index
+[x] elitism function in Genetics
+    [x] takes no parameters
+    [x] returns the chrom of ONE that has the highest fitness
+[x] breeding new generation algorithm
+    [x] declare local array for next gen of chroms
+    [x] find an individual with highest fitness using method you built
+    [x] insert best individuals chromosome into nextGen at 0
+    [x] for index 1-8
+        [x] breed1() a new chrom and insert it into next gen at [index]
+    [x] for index 0-8
+        [x] insert nextgen[index] into genetics class population array [index] with fitness value of 0
+        [x] use nextgen[index] to reset() huegrid in your huegrid array at [index]
+[] error check
+[] all done! good job! :)
