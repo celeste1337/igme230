@@ -1,0 +1,31 @@
+/*
+css for github personal page
+author: celeste yost
+*/
+
+/*
+make body pink and add some spacing
+*/
+body {
+    background-color: lightpink;
+
+}
+
+/*
+make a block for all the actual content with spacing around and inside that scales
+*/
+.content {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+}
+
+/*
+makes sure image scales with page
+*/
+.content img {
+    max-width: 50%;
+}
