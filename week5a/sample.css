@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header, article, aside {
+    width: 100%;
+}
+
+header {
+    background-color: #e5e5e5;
+    padding: 8px;
+}
+
+h1, h2, nav {
+    text-align: center;
+}
+
+nav {
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3, nav a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    width: 100%;
+    display: block;
+}
+
+aside {
+    background-color: #e5e5e5;
+    padding: 15px;
+    margin-top: 7px;
+}
