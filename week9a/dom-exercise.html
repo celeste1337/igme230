@@ -37,11 +37,28 @@
 
 
     <script>
-        // first, get a reference to the first <h1> on the page
+        // 1 - get a reference to the first <h1> on the page
         let h1 = document.querySelector('h1');
 
-        // second, change its HTML
-        h1.innerHTML = 'My <em>UFO</em> Page'; 
+        // 2-  change its HTML
+        h1.innerHTML = 'My UFO Page';  
+
+        // 3 - get a reference to the second h2 element and change its HTML in a single line of code
+        document.querySelector('h2:nth-of-type(2)').innerHTML = '<em>Klaatu Barada Nikto!</em>';
+
+        // 4 - get a reference to the paragraph immediately following the second h2 
+        let text = document.querySelector('h2:nth-of-type(2)+p');
+
+        // 5 -  set CSS values through the .style property
+        h1.style.fontFamily = 'Orbitron';
+        h1.style.fontSize = '3rem';
+        text.style.color = 'green';
+        text.style.fontFamily = 'Orbitron';
+        text.style.fontSize = '.75rem';
+        text.style.border = '2px solid magenta';
+        text.style.padding = '10px';
+        text.style.margin = '5px';
+                
     </script>
 </body>
 
