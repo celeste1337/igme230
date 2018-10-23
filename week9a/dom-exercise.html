@@ -69,10 +69,10 @@
             let currentText = h2.innerHTML;
             h2.innerHTML = "#" + (i + 1) + " - " + currentText;
 
-            h2.style.animation = "entrance .5s " + (i * .5) + "s linear both";
+            //h2.style.animation = "entrance .5s " + (i * .5) + "s linear both";
 
             // or write the above as an ES6 template string like this:
-            // h2.style.animation = `entrance .5s ${i*.5}s linear both`;
+            h2.style.animation = `entrance .5s ${i*.5}s linear both`;
         }
 
     </script>
