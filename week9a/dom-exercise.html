@@ -58,7 +58,23 @@
         text.style.border = '2px solid magenta';
         text.style.padding = '10px';
         text.style.margin = '5px';
-                
+            
+
+        // 6 - get a reference to ALL h2 elements 
+        let allHeadings = document.querySelectorAll("h2");
+
+        // 7 - loop through h2 array to add a number and an animation
+        for (let i = 0; i < allHeadings.length; i++) {
+            let h2 = allHeadings[i];
+            let currentText = h2.innerHTML;
+            h2.innerHTML = "#" + (i + 1) + " - " + currentText;
+
+            h2.style.animation = "entrance .5s " + (i * .5) + "s linear both";
+
+            // or write the above as an ES6 template string like this:
+            // h2.style.animation = `entrance .5s ${i*.5}s linear both`;
+        }
+
     </script>
 </body>
 
