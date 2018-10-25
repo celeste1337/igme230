@@ -8,21 +8,18 @@
 </head>
 <body>
     <script>
-        console.log("Hello world!");
+        // 5 fundamental JavaScript types
+        let sum = 99; // Number
+        let name = "Fred"; //String
+        let isLoggedIn = false; // Boolean
+        let userName = undefined;
+        let data = null;
 
-        const answer = 42;
+        // We can later change what type a variable contains without redefining it
+        sum = "Joe"; // sum now contains a String
+        name = 50; // name now contains a Number
 
-        // string concatenation
-        console.log("The answer to everything is " + answer); 
-
-        let x = 1;
-        let y = 1;
-        let sum = x + y;
-
-        // this string templating is an ES6-only alternative to normal concatenation
-        console.log(`${x} + ${y} is ${sum}`);
-        
-        finalAnswer = 43;
+        console.log(sum); // should output the string "Joe" to console
     </script>
 </body>
 </html>
