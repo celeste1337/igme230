@@ -31,8 +31,19 @@
     
     <script>
         "use strict";
-        let colors = []; // add some colors
-        let foods = []; // add some foods
+        let colors = ["green", "black", "red"]; // add some colors
+        let foods = ["pizza", "fried dumplings", "caesar salad"]; // add some foods
+
+        //colors
+        for(let i=0; i<colors.length; i++) {
+            let newLI = document.createElement("li");
+            newLI.innerHTML = "colors[i]";
+
+            let unorderedList = document.querySelector("ul");
+            unorderedList.insertAfter(unorderedList);
+        }
+
+        //foods
     </script>
     
 </body>
