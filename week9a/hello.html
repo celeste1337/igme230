@@ -8,18 +8,28 @@
 </head>
 <body>
     <script>
-        // 5 fundamental JavaScript types
-        let sum = 99; // Number
-        let name = "Fred"; //String
-        let isLoggedIn = false; // Boolean
-        let userName = undefined;
-        let data = null;
+        // Common JS Objects
+        let colors = ["red","green","blue"]; // Array literal
+        let person = {name:"Fred",age:20};   // Object literal
+        let month = new Date().getMonth(); 
+        let age = Math.round(20.999); // Doesn't affect person.age
 
-        // We can later change what type a variable contains without redefining it
-        sum = "Joe"; // sum now contains a String
-        name = 50; // name now contains a Number
+        console.log(colors[0]);   // first value of colors
+        console.log(person.name); // name value from person object
+        console.log(month);  // Note: Uses JS array position, starting from 0
+        console.log(age);  // References variable, not object property 
 
-        console.log(sum); // should output the string "Joe" to console
+        // Treat "primitives" like objects
+        let sum = 99.980809809;             // Number
+        let name = "Fred";                  // String
+        let isLoggedIn = false;             // Boolean
+
+        console.log(sum); // Number
+        console.log(sum.toFixed(2)); // String 
+        console.log(name.length); // Number (length of "Fred")
+        console.log(isLoggedIn); // Boolean 
+        console.log(isLoggedIn.toString()); // String 
+                        
     </script>
 </body>
 </html>
