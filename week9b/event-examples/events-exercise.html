@@ -42,6 +42,35 @@
 
 <script>
 /* Write your code here! */
+	let radioList = document.querySelectorAll("input");
+	let button = document.querySelector("button");
+	console.log(radioList);
+
+	radioList[0].addEventListener("click", addText);
+	radioList[1].addEventListener("click", addText);
+	radioList[2].addEventListener("click", addText);
+
+
+	
+	button.addEventListener("click", finalChoice);
+
+	console.log("end");
+	function addText() {
+		document.querySelector("#info").innerHTML = "You have selected the color " + this.value;
+		
+	}
+	function finalChoice() {
+		let value;
+		for (let i = 0; i<radioList.length; i++) {
+			if (radioList[i].checked == true) {
+				value = i;
+			}
+		}
+		
+		document.querySelector("#info").innerHTML = "Your FINAL CHOICE is " + radioList[value].value;
+		document.querySelector("legend").style.color = radioList[value].value;
+	}
+
 </script>
 </body>
 </html>
