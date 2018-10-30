@@ -35,17 +35,24 @@
         let foods = ["pizza", "fried dumplings", "caesar salad"]; // add some foods
 
         //colors
-        for(let i=0; i<colors.length; i++) {
-            let textNode = document.createTextNode(colors[i]);
+        createList(colorsList, colors);
+
+        //foods
+        createList(foodsList, foods);
+
+    function createList(listElement,array){
+    // you write the rest
+    for(let i=0; i<array.length; i++) {
+            let textNode = document.createTextNode(array[i]);
             let newLI = document.createElement("li");
 
             newLI.appendChild(textNode);
-            colorsList.appendChild(newLI);
-
-            
+            listElement.appendChild(newLI);
         }
+    }
 
-        //foods
+
+
     </script>
     
 </body>
