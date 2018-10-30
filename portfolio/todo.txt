@@ -1,0 +1,20 @@
+TO DO:
+- write up content
+- make all the html for the sites
+- resume css printer friendly stuff
+- image resizing
+- all the css
+    - flex-box for grid? maybe?
+- put index into igme230 index lol
+
+
+THINGS INCLUDED: (put in documentation)
+- font awesome stuff
+
+
+THINGS DONE:
+- html file structure created
+- put into github
+
+
+BUGS:
