@@ -10,6 +10,7 @@ TO DO:
 
 THINGS INCLUDED: (put in documentation)
 - font awesome stuff
+- adobe web fonts (?)
 
 
 THINGS DONE:
