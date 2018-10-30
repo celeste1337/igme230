@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainWrapper {
+    background-color: #005952;
+    color: #FCFEFE;
+}
+
+.mainWrapper nav {
+    list-style-type: none;
+}
+
+.mainWrapper nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
