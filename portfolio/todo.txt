@@ -19,3 +19,4 @@ THINGS DONE:
 
 
 BUGS:
+- flex does not work on nav?
