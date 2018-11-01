@@ -16,7 +16,8 @@ THINGS INCLUDED: (put in documentation)
 THINGS DONE:
 - html file structure created
 - put into github
+- nav bar flex done
 
 
 BUGS:
-- flex does not work on nav?
+- style nav bar more
