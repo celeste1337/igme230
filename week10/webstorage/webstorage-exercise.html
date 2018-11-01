@@ -60,7 +60,7 @@
     // if we find a previously set color value, display it
     if (storedColor) {
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = true;
-        document.querySelector("main").style.backgroundColor = storedColor;
+        document.querySelector("body").style.backgroundColor = storedColor;
     }
 
     /* This part of the script is triggered by user actions  */
