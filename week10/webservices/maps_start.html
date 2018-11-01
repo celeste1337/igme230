@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Google Maps API Example</title>
 
-  <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=INSERT-YOUR-API-KEY-HERE"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC1QUsSq3K3lNhCiW9vy864hg3pn0HKkIw"></script>
 
   <script>
     "use strict";
@@ -27,8 +27,19 @@
 
         // create a new map with the specified options (uses deprecated getElementByID; could use querySelector instead)
         var myMap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-      });
+        var myMarker = new google.maps.Marker({
+            position: latlng,
+            icon: "baseline-directions_walk-24px.svg",
+            map: myMap
+            }); //end myMarker
+            var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">I Did It!</h2><p>This is my very own custom info window.</p></div>';
+            var myInfowindow = new google.maps.InfoWindow({
+                content: contentString
+                }); //end info window
+            myMarker.addListener('click', function() {
+                myInfowindow.open(myMap, myMarker);
+                }); //end listener
+      }); //end if
 
     } else {  // alternate content if the browser couldn't get position (old browser, or user refused)
       var para = document.createElement('p');
