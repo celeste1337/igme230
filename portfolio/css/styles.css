@@ -78,6 +78,18 @@ main page other styling
 }
 
 /*****************
+footer styling
+*****************/
+footer {
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: #005952;
+}
+
+
+/*****************
 gallery/template styling
 *****************/
 .mainWrapper {
@@ -92,7 +104,10 @@ gallery/template styling
 
 .navigationOther {
     background-color: black;
-    color: red;
+}
+
+.navigationOther .homePage a:hover {
+    color: #005952;
 }
 
 /*****************
