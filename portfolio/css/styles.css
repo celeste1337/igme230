@@ -77,20 +77,9 @@ main page other styling
     border: 5px solid #FCFEFE;
 }
 
-/*****************
-footer styling
-*****************/
-footer {
-    margin-top: auto;
-}
-
-footer a:hover {
-    color: #005952;
-}
-
 
 /*****************
-gallery/template styling
+project page template styling
 *****************/
 .mainWrapper {
     background-color: #ffd6ba;
@@ -99,7 +88,7 @@ gallery/template styling
     font-weight: 100;
     font-style: normal;
     font-size: 2rem;
-    padding-bottom: 70.9vh; 
+    height: 100vh;
 }
 
 .navigationOther {
@@ -111,6 +100,50 @@ gallery/template styling
 }
 
 /*****************
+about page styling
+*****************/
+.aviPicAbout {
+    border-radius: 50%;
+    max-width: 25%;
+    border: 5px solid #005952;
+}
+
+.greeting {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+    background-color: whitesmoke;
+}
+
+p {
+    color: black;
+    width: 60%;
+    font-size: 1.75rem;
+    margin: 2%;
+}
+
+p .clickHere {
+    text-decoration: none;
+    color: #005952;
+    font-style: italic;
+    background-color: whitesmoke;
+    padding: 0 5px;
+}
+
+.clickHere a:hover {
+    background-color: #005952;
+    color: whitesmoke;
+}
+
+.bodyCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+}
+/*****************
 grid warning 
 *****************/
 
@@ -118,4 +151,15 @@ grid warning
     .warning {
         display: none;
     }
+}
+
+/*****************
+footer styling
+*****************/
+footer {
+    margin-top: 30vh;
+}
+
+footer a:hover {
+    color: #005952;
 }
