@@ -32,38 +32,67 @@ li a:link {
     color: white;
 }
 
-li a:hover {
-    color: rgb(99, 98, 98);
-}
-
 li a:visited, li a:active {
     color: white;
+}
+
+.homePage a:link, .homePage a:visited, .homePage a:active {
+    color: darkgray;
 }
 
 .homePage a:hover {
     color: peachpuff;
 }
 
+li a:hover {
+    color: rgb(99, 98, 98);
+}
+
 /*****************
 main page other styling
 *****************/
 
-.mainWrapper {
+.mainWrapperIndex {
     background-color: #005952;
     color: #FCFEFE;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
     padding-bottom: 70.9vh; 
 }
 
 .main {
-    font-family: serif;
     text-align: center;
+    font-family: ff-tisa-web-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
 }
 
 .avi {
+    margin-top: 15%;
     border-radius: 50%;
-    max-width: 10%;
+    max-width: 25%;
     border: 5px solid #FCFEFE;
+}
+
+/*****************
+gallery/template styling
+*****************/
+.mainWrapper {
+    background-color: #ffd6ba;
+    color: #FCFEFE;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+    padding-bottom: 70.9vh; 
+}
+
+.navigationOther {
+    background-color: black;
+    color: red;
 }
 
 /*****************
