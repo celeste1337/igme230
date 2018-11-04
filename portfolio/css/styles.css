@@ -88,7 +88,8 @@ project page template styling
     font-weight: 100;
     font-style: normal;
     font-size: 2rem;
-    height: 100vh;
+    height: auto;
+    flex: 1;
 }
 
 .navigationOther {
@@ -124,7 +125,7 @@ p {
     margin: 2%;
 }
 
-p .clickHere {
+.clickHere {
     text-decoration: none;
     color: #005952;
     font-style: italic;
@@ -132,7 +133,7 @@ p .clickHere {
     padding: 0 5px;
 }
 
-.clickHere a:hover {
+.clickHere:hover {
     background-color: #005952;
     color: whitesmoke;
 }
@@ -143,6 +144,42 @@ p .clickHere {
     justify-content: center;
     margin-top: 9%;
 }
+
+/*****************
+gallery page styling
+*****************/
+.bodyConGallery {
+    margin-top: 2%;
+}
+
+.bodyConGallery .greeting {
+    margin-left: 5%;
+}
+
+.bodyConGallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyConGallery img {
+    border-radius: 3px;
+}
+
+.bodyConGallery img:hover {
+    opacity: .5;
+}
+
+
+/*****************
+footer styling
+*****************/
+
+footer a:hover {
+    color: #005952;
+}
+
 /*****************
 grid warning 
 *****************/
@@ -151,15 +188,4 @@ grid warning
     .warning {
         display: none;
     }
-}
-
-/*****************
-footer styling
-*****************/
-footer {
-    margin-top: 30vh;
-}
-
-footer a:hover {
-    color: #005952;
 }
