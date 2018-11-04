@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #ffd6ba;
 }
 
 /*****************
@@ -59,7 +64,7 @@ main page other styling
     font-weight: 100;
     font-style: normal;
     font-size: 2rem;
-    padding-bottom: 70.9vh; 
+    height: 100vh;
 }
 
 .main {
@@ -71,7 +76,7 @@ main page other styling
 }
 
 .avi {
-    margin-top: 15%;
+    margin-top: 5%;
     border-radius: 50%;
     max-width: 25%;
     border: 5px solid #FCFEFE;
@@ -88,7 +93,7 @@ project page template styling
     font-weight: 100;
     font-style: normal;
     font-size: 2rem;
-    height: 100vh;
+    height: auto;
     flex: 1;
 }
 
@@ -104,11 +109,17 @@ project page template styling
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 9%;
+    padding-bottom: 10%;
+    flex: 1;
+}
+
+.bodyConProject img {
+    flex-grow: 0.25;
 }
 
 .bodyConProject p {
-    width: 50%;
+    width: 45%;
 }
 
 /*****************
@@ -155,6 +166,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 9%;
+    padding-bottom: 5%;
 }
 
 /*****************
@@ -162,6 +174,7 @@ gallery page styling
 *****************/
 .bodyConGallery {
     margin-top: 2%;
+    margin-bottom: 20vh;
 }
 
 .bodyConGallery .greeting {
