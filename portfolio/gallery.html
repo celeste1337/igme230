@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Celeste Yost</title>
 
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
     <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="mainWrapper">
@@ -22,6 +24,14 @@
                 <li><a href="docs.html" alt="Link to about page.">DOCUMENTATION</a></li>
 
             </ul>
+
+            <select>
+                    <option value="index.html">CELESTE YOST</option>
+                    <option value="gallery.html">WORK</option>>
+                    <option value="about.html">ABOUT</option>>
+                    <option value="docs.html">DOCUMENTATION</option>
+    
+            </select>
         </nav>
 
         <!--body content goes here!--> 
@@ -57,5 +67,10 @@
             </ul>
         </footer>
     </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
 </body>
 </html>

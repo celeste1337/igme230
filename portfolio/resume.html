@@ -6,10 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Celeste Yost</title>
 
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
+
+        <nav>
+                <ul class="navigationOther">
+                    <li class="homePage"><a href="index.html" alt="Link to landing page.">CELESTE YOST</a></li>
+                    <li><a href="gallery.html" alt="Link to page of work.">WORK</a></li>
+                    <li><a href="about.html" alt="Link to about page.">ABOUT</a></li>
+                    <li><a href="docs.html" alt="Link to about page.">DOCUMENTATION</a></li>
     
+                </ul>
+
+
+                <select>
+                        <option value="index.html">CELESTE YOST</option>
+                        <option value="gallery.html">WORK</option>>
+                        <option value="about.html">ABOUT</option>>
+                        <option value="docs.html">DOCUMENTATION</option>
+        
+                </select>
+            </nav>
+    <div class="resumeWrapper">
+
+        
+        <div class="col1">
+        <h1>Celeste Yost</h1>
+        <p>Available for work in front-end web development and design starting June to August 2019.</p>
+        <h4>(214) 608-5796 my7998@rit.edu</h4>
+
+        <h2>Education</h2>
+        <h3>Rochester Institute of Technology, Rochester NY — BS</h3>
+        <h4>AUGUST 2017 - PRESENT GPA: 3.6</h4>
+        <p>Majoring in New Media Interactive Development. Recipient of yearly
+                Presidential Scholarship, which recognizes academic excellence.</p>
+
+        <h2>Experience</h2>
+        <h3>Rochester Institute of Technology, Rochester NY — Event
+                Staff</h3>
+        <h4>SEPTEMBER 2018 - PRESENT</h4>
+        <p>Assists in implementing events by ushering, taking tickets, and setting
+                up for events at the Gene Polisseni Center at RIT.</p>
+
+        <h3>Rochester Institute of Technology, Rochester NY —
+                Notetaker</h3>
+        <h4>AUGUST 2017 - MAY 2021</h4>
+        <p>Organizes and takes notes in class for deaf/hard-of-hearing students
+                at RIT.</p>
+
+        <h3>Southwest Airlines, Dallas TX — Intern</h3>
+        <h4>JUNE 2016 - AUGUST 2016</h4>
+        <p>Implemented and presented research for a mobile app to sync ground
+                crew, gate agents, and flight crew. Also designed interfaces for an app that uses beacons to prove conceptual usefulness in a non-corporate setting.</p>
+
+        <h2>Projects</h2>
+        <h3>So You Think You’re A 90s Kid — Second Lead
+                Programmer</h3>
+        <h4>FEBRUARY 2018</h4>
+        <p>Second lead programmer in a team of four for a JavaScript grid-based
+                game using the p5 library at WicHacks 2018. Implemented grid, enemy,
+                and performed QA testing on finished code. Also assisted in game
+                animations using state transitions.</p>
+
+        </div>
+        <div class="col2">
+
+        <h2>Skills</h2>
+            <h3>Languages</h3>
+            <ul>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                </ul>
+            <h3>Software</h3>
+                <ul>
+                    <li>Adobe Photoshop/Illustrator</li>
+                    <li>Microsoft Office</li>
+                    <li>GitHub Version Control</li>
+                </ul>
+             <h2>Clubs</h2>
+                <p>UX Club - Member</p>
+                <h4>SEPTEMBER 2018 - PRESENT</h4>
+            <h2>Courses</h2>
+            <ul>
+                    <li>Language Technology</li>
+                    <li>New Media Design Digital Survey I & II</li>
+                    <li>Interactive Design & Algorithmic Problem Solving I, II, & III</li>
+                </ul>
+        
+        </div>
+    </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
 </body>
 </html>

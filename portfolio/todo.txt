@@ -1,8 +1,5 @@
 TO DO:
-- write up content
-- make all the html for the sites
 - resume css printer friendly stuff
-- image resizing
 - all the css
     - flex-box for grid? maybe?
 - put index into igme230 index lol
@@ -17,7 +14,9 @@ THINGS DONE:
 - html file structure created
 - put into github
 - nav bar flex done
+- write up content
+- make all the html for the sites
+- image resizing
 
 
 BUGS:
-- style nav bar more

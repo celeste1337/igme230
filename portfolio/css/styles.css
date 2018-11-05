@@ -53,6 +53,10 @@ li a:hover {
     color: rgb(99, 98, 98);
 }
 
+nav select {
+    visibility: hidden;
+}
+
 /*****************
 main page other styling
 *****************/
@@ -72,7 +76,7 @@ main page other styling
     font-family: ff-tisa-web-pro, serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .avi {
@@ -131,7 +135,7 @@ about page styling
     border: 5px solid #005952;
 }
 
-.greeting {
+.greeting, h2, h3 {
     color: #005952;
     font-family: ff-tisa-web-pro, serif;
     font-weight: 400;
@@ -196,6 +200,17 @@ gallery page styling
     opacity: .5;
 }
 
+/*****************
+docs styling
+*****************/
+h2, h3 {
+    margin: 1%;
+}
+
+.docs {
+    width: 90vw;
+    margin: auto;
+}
 
 /*****************
 footer styling
@@ -206,11 +221,124 @@ footer a:hover {
 }
 
 /*****************
-grid warning 
+flex warning 
 *****************/
 
 @supports (display: flex) {
     .warning {
         display: none;
+    }
+}
+
+
+/*****************
+printer resume styling
+*****************/
+nav {
+    font-family: proxima-soft, sans-serif;
+}
+
+.resumeWrapper {
+    font-family: proxima-soft, sans-serif;
+    padding: 5%;
+    height: auto;
+    display: flex;
+} 
+
+
+.resumeWrapper .col2 h2 {
+    border-top: 0;
+}
+
+.resumeWrapper .col2 ul {
+    flex-direction: column;
+}
+
+.resumeWrapper .col2 {
+    width: 50%;
+}
+
+.resumeWrapper h1 {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 3rem;
+}
+
+.resumeWrapper h2 {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 2rem;
+    border-top: 2px dotted whitesmoke;
+}
+
+.resumeWrapper h3 {
+    color: #01221f;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 1.5rem;
+}
+
+.resumeWrapper h4 {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.resumeWrapper p, .resumeWrapper li {
+    font-size: 1.2rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .resumeWrapper {
+        font-size: 12pt;
+        padding: 2%;
+    }
+}
+
+/*****************
+mobile styling
+*****************/
+
+@media screen and (max-width: 414px) {
+   
+    nav ul {
+        display: none;
+    }
+
+    nav select {
+        visibility: visible;
+        background-color: white;
+        width: 100vw;
+        height: 10vh;
+        font-size: 1.25rem;
+    }
+
+    footer i {
+        font-size: 0.75em;
+    }
+
+    .bodyCon, .bodyConProject {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bodyCon p, .bodyConProject p, p, .greeting {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    img {
+        width: 75%;
+        height: 75%;
+        margin: auto;
     }
 }
