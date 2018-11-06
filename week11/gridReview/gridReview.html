@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .mygrid {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px 1fr 1fr;
+            /*fr is based on the container*/
+            grid-template-rows: 100px 1fr 1fr 50px;
+        }
+
+        .mygrid div {
+            border: 3px dotted white;
+            background-color: lightpink;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titleBar {
+            grid-column: 1 / span 3;
+        }
+
+        .sideBar {
+            grid-row: 2 / -2;
+        }
+
+        .footer {
+            grid-column: 1 / span 3;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="mygrid">
+        <!--any direct child is a cell of the grid-->
+        <div class="titleBar">cell 1</div>
+        <div class="sideBar">cell 2</div>
+        <div>cell 3</div>
+        <div>cell 4</div>
+        <div>cell 5</div>
+        <div>cell 6</div>
+        <div class="footer">cell 7</div>
+    </div>
+</body>
+</html>
