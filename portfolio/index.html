@@ -6,27 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Celeste Yost</title>
 
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 </head>
 <body>
     <!--site structure: index, gallery, indiv pages for each gallery piece, resume, contact, documentation-->
     <!--this is the index: needs name & picture-->
-    <div class="mainWrapper">
+    <div class="mainWrapperIndex">
         <nav>
-            <ul role="navigation">
-                <li class="homePage"><a href="index.html" alt="Link to landing page.">Celeste Yost</a></li>
-                <li><a href="gallery.html" alt="Link to gallery of work.">Work</a></li>
-                <li><a href="about.html" alt="Link to about page.">About</a></li>
-                <li><a href="docs.html" alt="Link to about page.">Documentation</a></li>
+            <ul>
+                <li class="homePage"><a href="index.html" >CELESTE YOST</a></li>
+                <li><a href="gallery.html" >WORK</a></li>
+                <li><a href="about.html" >ABOUT</a></li>
+                <li><a href="docs.html" >DOCUMENTATION</a></li>
 
             </ul>
+
+            <select>
+                    <option value="index.html">CELESTE YOST</option>
+                    <option value="gallery.html">WORK</option>
+                    <option value="about.html" >ABOUT</option>
+                    <option value="docs.html" >DOCUMENTATION</option>
+    
+            </select>
+
+
         </nav>
+
+        
+
+
         <div class="main">
             <img src="images/avipic.jpg" alt="A picture of myself." class="avi">
             <h1>Celeste Yost</h1>
         </div>
         
     </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
 </body>
 </html>

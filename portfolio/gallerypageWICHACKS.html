@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Celeste Yost</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="mainWrapper">
+        <nav>
+            <ul class="navigationOther">
+                <li class="homePage"><a href="index.html" >CELESTE YOST</a></li>
+                <li><a href="gallery.html" >WORK</a></li>
+                <li><a href="about.html" >ABOUT</a></li>
+                <li><a href="docs.html" >DOCUMENTATION</a></li>
+
+            </ul>
+
+            <select>
+                    <option value="index.html" >CELESTE YOST</option>
+                    <option value="gallery.html">WORK</option>
+                    <option value="about.html">ABOUT</option>
+                    <option value="docs.html">DOCUMENTATION</option>
+    
+            </select>
+        </nav>
+
+        <!--body content-->
+        <div class="bodyConProject">
+                <img src="images/wicHacks.png" alt="Screenshot of our grid-based game." >
+                <p><span class="greeting">WicHacks 2018</span><br>
+                This was my group's final product for WicHacks 2018, an all-girls 24-hour hackathon. We made a grid-based game using p5, a Javascript library we had been using in class. The object of the game is to avoid the UFO while collecting stars. If the UFO touches you, you lose a health. At 0 health, the game ends! In our group of four, I was the second lead developer and implemented the grid for everything to "live" on, and the code for the UFO. You can check out the p5 documentation page <a href="https://p5js.org/"  class="clickHere" target="_blank">here.</a><br> 
+                You can also click <a href="https://wichacks.io/"  class="clickHere" target="_blank">here</a> to learn more about WicHacks. <br>
+                Click <a href="https://people.rit.edu/ceb3745/soyouthinkyourea90skid/"  class="clickHere" target="_blank">here</a> to play our game!</p>
+            </div>
+    
+            <!--end body content-->
+
+        <footer>
+            <ul>
+                <li><a href="https://github.com/celeste1337/"  target=_blank><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.instagram.com/celestemakesstuff/"  target=_blank><i class="fab fa-instagram"></i></a></li>
+                <li><a href="resume.html" ><i class="fas fa-print"></i></a></li>
+                <li><a href="mailto:my7998@rit.edu" ><i class="fas fa-at"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
+</body>
+</html>

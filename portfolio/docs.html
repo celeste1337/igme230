@@ -4,20 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Celeste Yost</title>
 
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <div class="mainWrapper">
+        <nav>
+            <ul class="navigationOther">
+                <li class="homePage"><a href="index.html">CELESTE YOST</a></li>
+                <li><a href="gallery.html">WORK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="docs.html">DOCUMENTATION</a></li>
 
-    <footer>
-        <ul>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
-        </ul>
-    </footer>
+            </ul>
+
+            <select>
+                    <option value="index.html">CELESTE YOST</option>
+                    <option value="gallery.html">WORK</option>
+                    <option value="about.html">ABOUT</option>
+                    <option value="docs.html">DOCUMENTATION</option>
+    
+            </select>
+        </nav>
+
+        <!--body content-->
+        <div class="docs">
+                <h2>Documentation</h2>
+
+                <h3>Things used</h3>
+                <p>For this project, I used Font Awesome icons for the footer icons (all four of them). I modified the hover to be more in line with my color scheme.<br>
+                I also used Adobe Fonts to embed both of my fonts into each webpage and the CSS. This is done by linking to the styling page Adobe provided and then referencing the fonts in CSS as I would normally. I got to use Adobe Fonts through my Adobe Creative Cloud subscription.<br>
+                I also looked at someone's guide for making a dropdown menu for the menu that shows up on my mobile design for this site. You can find his guide <a href="https://css-tricks.com/convert-menu-to-dropdown/" class="clickHere" target=_blank>here.</a></p>
+
+                <h3>Things that were hard</h3>
+                <p>Pretty much everything regarding the dropdown menu was difficult, but I solved that with the guide I mentioned above. Besides that, the most difficult aspect of this project was working with flexbox. I'm not 100% used to it (more used to floats and clears), but it really sped up the process of making this site. For most of my issues, I referenced  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="clickHere" target=_blank>this</a> guide. I found that it worked incredibly well as a "cheatsheet" for flexbox things I hadn't memorized.</p>
+
+                <h3>Above & Beyond</h3>
+                <p>I think my design went above my own expectations, especially considering I had a hard time figuring out how to include everything required and still maintain a style that I thought represented my aesthetics. I also think I modelled my resume page extremely similar to my actual resume, which was pretty difficult to do using flexbox considering my actual resume uses tables. Also, I liked my favicon.</p>
+
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://github.com/celeste1337/" target=_blank><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.instagram.com/celestemakesstuff/" target=_blank><i class="fab fa-instagram"></i></a></li>
+                <li><a href="resume.html"><i class="fas fa-print"></i></a></li>
+                <li><a href="mailto:my7998@rit.edu" ><i class="fas fa-at"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
 </body>
 </html>

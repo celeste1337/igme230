@@ -32,41 +32,28 @@
                     <option value="docs.html">DOCUMENTATION</option>
     
             </select>
+
         </nav>
 
-        <!--body content goes here!--> 
-        <div class="bodyConGallery">
-            <ul>
-                <li>
-                    <a href="gallerypageGENALG.html">
-                        <img src="images/GenAlg.png"  alt="Genetic Algorithm for IDAPSII">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="gallerypageWICHACKS.html">
-                        <img src="images/wicHacks.png"  alt="Grid-based game using Javascript">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="gallerypageNMD.html">
-                        <img src="images/strawberryPoster.png"  alt="Final poster for NMD II">
-                    </a>
-                </li>
-            </ul>
+        <!--body content-->
+        <div class="bodyConProject">
+            <img src="images/GenAlg.png" alt="Screenshot of my genetic algorithm." >
+            <p><span class="greeting">Genetic Algorithm</span><br>
+            This was my final project for IDAPS II, a class that focuses on advanced programming fundamentals. This project is a genetic algorithm, where the top left grid changes based on multiple factors over time. This project is made using the p5 Javascript library, which you can look at <a href="https://p5js.org/" class="clickHere" target=_blank>here.</a><br>
+            Click <a href="../genAlgProject/project.html"  class="clickHere" target="_blank">here</a> to mess around with the project.</p>
         </div>
+
         <!--end body content-->
 
         <footer>
             <ul>
-                <li><a href="https://github.com/celeste1337/" target=_blank><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://github.com/celeste1337/"  target=_blank><i class="fab fa-github-square"></i></a></li>
                 <li><a href="https://www.instagram.com/celestemakesstuff/" target=_blank><i class="fab fa-instagram"></i></a></li>
-                <li><a href="resume.html"><i class="fas fa-print"></i></a></li>
+                <li><a href="resume.html" ><i class="fas fa-print"></i></a></li>
                 <li><a href="mailto:my7998@rit.edu" ><i class="fas fa-at"></i></a></li>
             </ul>
         </footer>
-    </div>
+    </div> <!--end main wrapper-->
 
     <script>$("nav select").change(function() {
             window.location = $(this).find("option:selected").val();

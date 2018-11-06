@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #ffd6ba;
 }
 
 /*****************
@@ -32,46 +37,308 @@ li a:link {
     color: white;
 }
 
-li a:hover {
-    color: rgb(99, 98, 98);
-}
-
 li a:visited, li a:active {
     color: white;
+}
+
+.homePage a:link, .homePage a:visited, .homePage a:active {
+    color: darkgray;
 }
 
 .homePage a:hover {
     color: peachpuff;
 }
 
+li a:hover {
+    color: rgb(99, 98, 98);
+}
+
+nav select {
+    visibility: hidden;
+}
+
 /*****************
 main page other styling
 *****************/
 
-.mainWrapper {
+.mainWrapperIndex {
     background-color: #005952;
     color: #FCFEFE;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 70.9vh; 
+    font-family: proxima-soft, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+    height: 100vh;
 }
 
 .main {
-    font-family: serif;
     text-align: center;
+    font-family: ff-tisa-web-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
 }
 
 .avi {
+    margin-top: 5%;
     border-radius: 50%;
-    max-width: 10%;
+    max-width: 25%;
     border: 5px solid #FCFEFE;
 }
 
+
 /*****************
-grid warning 
+project page template styling
+*****************/
+.mainWrapper {
+    background-color: #ffd6ba;
+    color: #FCFEFE;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+    height: auto;
+    flex: 1;
+}
+
+.navigationOther {
+    background-color: black;
+}
+
+.navigationOther .homePage a:hover {
+    color: #005952;
+}
+
+.bodyConProject {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 9%;
+    padding-bottom: 10%;
+    flex: 1;
+}
+
+.bodyConProject img {
+    flex-grow: 0.25;
+}
+
+.bodyConProject p {
+    width: 45%;
+}
+
+/*****************
+about page styling
+*****************/
+.aviPicAbout {
+    border-radius: 50%;
+    max-width: 25%;
+    border: 5px solid #005952;
+}
+
+.greeting, h2, h3 {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+    background-color: whitesmoke;
+    padding: 0 8px;
+}
+
+p {
+    color: black;
+    width: 60%;
+    font-size: 1.75rem;
+    margin: 2%;
+}
+
+.clickHere {
+    text-decoration: none;
+    color: #005952;
+    font-style: italic;
+    background-color: whitesmoke;
+    padding: 0 5px;
+}
+
+.clickHere:hover {
+    background-color: #005952;
+    color: whitesmoke;
+}
+
+.bodyCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+    padding-bottom: 5%;
+}
+
+/*****************
+gallery page styling
+*****************/
+.bodyConGallery {
+    margin-top: 2%;
+    margin-bottom: 20vh;
+}
+
+.bodyConGallery .greeting {
+    margin-left: 5%;
+}
+
+.bodyConGallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyConGallery img {
+    border-radius: 3px;
+}
+
+.bodyConGallery img:hover {
+    opacity: .5;
+}
+
+/*****************
+docs styling
+*****************/
+h2, h3 {
+    margin: 1%;
+}
+
+.docs {
+    width: 90vw;
+    margin: auto;
+}
+
+/*****************
+footer styling
+*****************/
+
+footer a:hover {
+    color: #005952;
+}
+
+/*****************
+flex warning 
 *****************/
 
 @supports (display: flex) {
     .warning {
         display: none;
+    }
+}
+
+
+/*****************
+printer resume styling
+*****************/
+nav {
+    font-family: proxima-soft, sans-serif;
+}
+
+.resumeWrapper {
+    font-family: proxima-soft, sans-serif;
+    padding: 5%;
+    height: auto;
+    display: flex;
+} 
+
+
+.resumeWrapper .col2 h2 {
+    border-top: 0;
+}
+
+.resumeWrapper .col2 ul {
+    flex-direction: column;
+}
+
+.resumeWrapper .col2 {
+    width: 50%;
+}
+
+.resumeWrapper h1 {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 3rem;
+}
+
+.resumeWrapper h2 {
+    color: #005952;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 2rem;
+    border-top: 2px dotted whitesmoke;
+}
+
+.resumeWrapper h3 {
+    color: #01221f;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 1.5rem;
+}
+
+.resumeWrapper h4 {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.resumeWrapper p, .resumeWrapper li {
+    font-size: 1.2rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .resumeWrapper {
+        font-size: 12pt;
+        padding: 2%;
+    }
+}
+
+/*****************
+mobile styling
+*****************/
+
+@media screen and (max-width: 414px) {
+   
+    nav ul {
+        display: none;
+    }
+
+    nav select {
+        visibility: visible;
+        background-color: white;
+        width: 100vw;
+        height: 10vh;
+        font-size: 1.25rem;
+    }
+
+    footer i {
+        font-size: 0.75em;
+    }
+
+    .bodyCon, .bodyConProject {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bodyCon p, .bodyConProject p, p, .greeting {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    img {
+        width: 75%;
+        height: 75%;
+        margin: auto;
     }
 }

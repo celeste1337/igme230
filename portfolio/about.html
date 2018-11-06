@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Celeste Yost</title>
 
-
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok7dxz.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
+    <div class="mainWrapper">
+
+        <nav>
+            <ul class="navigationOther">
+                <li class="homePage"><a href="index.html">CELESTE YOST</a></li>
+                <li><a href="gallery.html">WORK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="docs.html">DOCUMENTATION</a></li>
+
+            </ul>
+
+            <select>
+                    <option value="index.html">CELESTE YOST</option>
+                    <option value="gallery.html">WORK</option>
+                    <option value="about.html">ABOUT</option>
+                    <option value="docs.html">DOCUMENTATION</option>
     
+            </select>
+        </nav>
+
+         <!--body content-->
+        <div class="bodyCon">
+            <img src="images/avipic.jpg" class="aviPicAbout" alt="A picture of me.">
+            <p><span class="greeting">Hi. I'm Celeste.</span><br>
+            I'm a web development student with experience in HTML/CSS, Javascript, Java, and C#. I love seeing my designs come to life! Thanks for checking out my work. If you want to contact me, click <a href="mailto:my7998@rit.edu" class="clickHere">here</a> to shoot me an email!</p>
+        </div>
+        <!--end body content-->
 
     <footer>
         <ul>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
+            <li><a href="https://github.com/celeste1337/" target=_blank><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.instagram.com/celestemakesstuff/" target=_blank><i class="fab fa-instagram"></i></a></li>
+            <li><a href="resume.html"><i class="fas fa-print"></i></a></li>
+            <li><a href="mailto:my7998@rit.edu"><i class="fas fa-at"></i></a></li>
         </ul>
     </footer>
+    </div>
+
+    <script>$("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+        </script>
 </body>
 </html>
