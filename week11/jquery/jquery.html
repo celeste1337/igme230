@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        #panel1, #panel2 {
+            border: 1px dotted grey;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+
+    <div id="panel1">
+        I have text here!
+    </div>
+
+    <div id="panel2">
+        There's more text here!
+    </div>
+
+    <script>
+        $("#hide").click(function(){
+            $("#panel1").hide();
+        });
+
+        $("#show").click(function() {
+            $("#panel1").show();
+        });
+    </script>
 </body>
 </html>
