@@ -108,8 +108,32 @@
         </div>
     </div>
     <script>
-     
+        const numCols = 30; // specify pixel grid columns
+        const numRows = 20; // specify pixel grid rows
+        const cellSize = 25; // specify dimension of cell square in px
+        const numCells = numCols * numRows; // calculate total number of cells
 
+        let pixelgrid = document.querySelector("#pixelGrid"); //this is the pixel grid
+        let color = $("#colorChooser").val();
+        //console.log(color);
+        
+        //end of variables and consts
+
+        pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`; //backtick, NOT a single quote
+        pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
+
+        for(let i=0; i < numCells; i++) {
+            $("#pixelGrid").append('<span class="cell"></span>');
+        }
+
+        $("#colorChooser").change(function () { //when the colorchoose changes, it call this function
+            color = $(this).val();  
+            console.log(color);  
+        }); //ugly but it closes the function, then closes what changes, then ends with a semicolon bc js
+
+        $(".cell").click(function () {
+            $(this).css("background-color", color);
+        });
 
     </script>
 </body>
