@@ -105,6 +105,7 @@
                 <option value="yellow">Yellow</option>
             </select>
             <button id="reset">Reset</button>
+            <button id="noBorders">Remove Borders</button>
         </div>
     </div>
     <script>
@@ -115,26 +116,48 @@
 
         let pixelgrid = document.querySelector("#pixelGrid"); //this is the pixel grid
         let color = $("#colorChooser").val();
+        let slider = document.getElementById("range");
         //console.log(color);
         
-        //end of variables and consts
-
         pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`; //backtick, NOT a single quote
-        pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
+            pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
 
-        for(let i=0; i < numCells; i++) {
-            $("#pixelGrid").append('<span class="cell"></span>');
+        //end of variables and consts
+        function createGrid() {
+            
+
+            for(let i=0; i < numCells; i++) {
+                $("#pixelGrid").append('<span class="cell"></span>');
+            }
         }
+
+        createGrid();
 
         $("#colorChooser").change(function () { //when the colorchoose changes, it call this function
             color = $(this).val();  
             console.log(color);  
         }); //ugly but it closes the function, then closes what changes, then ends with a semicolon bc js
 
-        $(".cell").click(function () {
+        $(".cell").mousedown(function () { 
+            event.preventDefault(); 
             $(this).css("background-color", color);
+            $(".cell").mouseover(function () {
+            $(this).css("background-color", color);
+            });
         });
 
+        $(document).mouseup(function () {
+            $(".cell").unbind("mouseover");
+        });
+
+        $("#reset").click(function () {
+            color = "#ccc";
+            $(".cell").css("background-color", color);
+        });
+        
+        $("#noBorders").click(function () {
+            $(".cell").css("border", "none");
+        });
     </script>
 </body>
 
