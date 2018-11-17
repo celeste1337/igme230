@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Example Page</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.slidereveal.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: darkolivegreen;
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            margin: 0 20%;
+        }
+
+        #menu {
+            background-color: lightgoldenrodyellow;
+            color: darkgoldenrod;
+        }
+
+        #menu ul li {
+            list-style-type: none;
+        }
+
+        #slideMe {
+            font-size: 2rem;
+            background-color: darkred;
+            color: darkgoldenrod;
+        }
+
+        .content {
+            margin: 2% 0;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+        }
+
+        #leftPanel {
+            display: grid;
+            grid-template-columns: 150px 1.5rem;
+            min-height: 200px;
+            max-height: 90vh;
+            margin-bottom: 2em;
+            background-color: antiquewhite;
+            color: black;
+            position: fixed;
+            left: -150px;
+            z-index: 2;
+            box-shadow: 5px 10px 8px darkslategray;
+        }
+
+        #leftToggle {
+            grid-column-start: 2;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .clickMe {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 2rem;
+        }
+
+        #leftMenu {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            align-items: top;
+        }
+
+        #leftMenu p {
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div id="slideMe">About the Festival</div>
+            <div id="menu">
+                <ul>
+                    <li><a href="example1.html">About</a></li>
+                    <li><a href="example1.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h2>Autumn Fest</h2>
+            <div id="leftPanel">
+                    <div id="leftToggle"><span class="clickMe">?</span></div>
+                    <div id="leftMenu">
+                        <p>FAQ</p>
+                        <ul>
+                            <li>Where to Park</li>
+                            <li>Become a Vendor</li>
+                            <li>Festival Map</li>
+                        </ul>
+                    </div>
+                </div>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                tomatillo melon azuki bean garlic. <br>
+
+                Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+                collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. <br>
+
+                Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+                avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+                horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean
+                swiss
+                chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd
+                swiss
+                chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean
+                chickweed potato bell pepper artichoke.</p>
+        </div>
+    </div>
+
+    <script>
+        let openClose = false; //var for slidey the thingy
+        $("#slideMe").click(function () {
+            $("#menu").slideToggle("fast");
+        });
+
+        $(".clickMe").click(function () {
+            if (openClose == false) {
+                $("#leftPanel").animate({ left: '-150' }, "fast");
+            }
+            else if (openClose == true) {
+                $("#leftPanel").animate({ left: '0px' }, "fast");
+            }
+            openClose = !openClose;
+        })
+
+    </script>
+
+</body>
+
+</html>
