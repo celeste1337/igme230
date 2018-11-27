@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Initial AJAX File</title>
 
     <style>
@@ -78,30 +79,9 @@
 
     </div>
     <script>
-        'use strict';
 
-        let verseChoose = document.querySelector('select'); // the select menu
-        let poemDisplay = document.querySelector('#selectedverse');  // the space for the verse to display
-        let verse = "verse1-2.txt"; // the chosen verse; initialize with first menu option
 
-        //a function that'll do AJAX stuff! pass in current value of "verse", it'll request the actual file
-        function updateVerse(verse) {
-            let verseRequest = new XMLHttpRequest();  // defines a specific request
-            verseRequest.open('GET', verse);  // specifies what to do when request is sent
-            verseRequest.responseType = 'text'; // specifies that the files should be treated as text
-            verseRequest.onload = function () {  // specifies what to do when file is loaded - NOT document onload!!
-                poemDisplay.innerHTML = verseRequest.response;  // place the response text (output of the request) in the selected element
-            };
-            verseRequest.send(); // actually sends the request
-        };
 
-        verseChoose.onchange = function () {
-            verse = verseChoose.value;
-            updateVerse(verse);
-        };
-
-        verseChoose.value = verse; // shows initial menu option
-        updateVerse(verse);  // shows intial content
     </script>
 </body>
 
