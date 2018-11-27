@@ -79,9 +79,15 @@
 
     </div>
     <script>
+        'use strict';
+        let verse = ("verse1-2.txt")  // sets default verse element
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verse);   // retrieves only default element, could also load in the file name
 
-
-
+        $("#verse-choose").change(function () { //on change, do this!
+            verse = $(this).val(); //set verse to current value of the dropdown
+            $("#selectedverse").load(verse); //load up the verse with the current val of the dropdown!
+        });
     </script>
 </body>
 
