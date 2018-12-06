@@ -32,5 +32,106 @@ aside {
 
 
 /**************
-Your Formatting
+Your Formatting -- desktop formatting
 ***************/
+#mygrid {
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 75px 30px 1fr 2fr 50px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside article"
+        "excred article"
+        "footer footer";
+
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    background-color: lavenderblush;
+}
+
+article {
+    grid-area: article;
+    background-color: lightcyan;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header, footer {
+    background-color: lightpink;
+}
+
+#extracredit {
+    grid-area: excred;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid darkcyan;
+}
+
+header, footer, nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top {
+    width: 6rem;
+    background-color: #ccc;
+    text-align: center;
+    margin: 0;
+}
+
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    z-index: 2;
+    position: absolute;
+}
+
+.list li {
+    padding-left: .25rem;
+    background-color: #ddd;
+    width: 6rem;
+    top: -15px;
+}
+
+#clickcount {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+/**************
+mobile formatting
+***************/
+
+@media screen and (max-width: 411px) { /*this is the width of a pixel 2 XL which was the biggest phone i could think of*/
+    #mygrid {
+        width: 100vw;
+        grid-template-columns: auto;
+        grid-template-rows: 75px 30px auto auto auto 30px;
+        grid-template-areas:
+            "header" "nav" "article" "aside" "excred" "footer";
+    }
+}
