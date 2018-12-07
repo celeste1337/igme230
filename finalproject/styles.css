@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: grid;
+    width: 500vw;
+    height: 100vh;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "welcome first second third thanks";
+    /*grid styling donezo, other styling below*/
+    background-color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightseagreen;
+}
+
+/*grid styling*/
+
+#welcomePage {
+    grid-area: welcome;
+    /*make it not as big and also center it!*/
+    width: 75vw;
+    margin: auto;
+}
+
+#firstGraphic {
+    grid-area: first;
+}
+
+#secondGraphic {
+    grid-area: second;
+}
+
+#thirdGraphic {
+    grid-area: third;
+}
+
+#thanksPage {
+    grid-area: thanks;
+}
+
+/* button styling */
+.button {
+    display: block;
+    width: 7rem;
+    padding: 13px;
+    margin: 10px auto;
+    border: 1px solid lightslategray;
+    background-color: lightgrey;
+    color: darkslategrey;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 550;
+}
