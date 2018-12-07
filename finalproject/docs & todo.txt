@@ -1,0 +1,30 @@
+TO DO:
+- make all the assets
+- css animations
+- disable scroll
+- pixijs stuff
+- mouse icon
+- mouse trail
+- icons
+- thanks page
+- type up content
+- home button
+
+DOCS:
+- used animista.net
+- fontawesome icons
+- pixiJS
+
+
+NOTES TO SELF:
+
+color scheme:
+bg: #A2666F
+dark: #4A4063
+light: #FFBFB7
+neutral: #E6B89C
+alert: #FE938C
+
+fonts:
+headings/game text: Sketchnote
+body: PT Sans Pro

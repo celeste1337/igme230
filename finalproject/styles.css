@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #wrapper {
@@ -12,18 +13,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "welcome first second third thanks";
     /*grid styling donezo, other styling below*/
-    background-color: lightpink;
-    font-family: Arial, Helvetica, sans-serif;
-    color: lightseagreen;
+    background-color: #A2666F;
+    color: #FFBFB7
 }
 
 /*grid styling*/
+
+#startHere {
+    width: 0;
+    height: 0;
+}
 
 #welcomePage {
     grid-area: welcome;
     /*make it not as big and also center it!*/
     width: 75vw;
     margin: auto;
+    text-align: center;
+    font-size: 1.75rem;
 }
 
 #firstGraphic {
@@ -42,16 +49,58 @@
     grid-area: thanks;
 }
 
+#screenSmall {
+    visibility: hidden;
+}
+
 /* button styling */
 .button {
     display: block;
     width: 7rem;
-    padding: 13px;
+    padding: 0.5rem;
     margin: 10px auto;
-    border: 1px solid lightslategray;
-    background-color: lightgrey;
-    color: darkslategrey;
+    border: 1px solid #4A4063;
+    background-color: #FFBFB7;
+    color: #4A4063;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 550;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*text styling*/
+h1, h2  {
+    font-family: sketchnote-text, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p, a {
+    font-family: pt-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* small screen stuff */
+@media screen and (max-width: 411px) {
+    #screenSmall {
+        visibility: visible;
+        border: 1px solid white;
+        background-color: lightcoral;
+        color: white;
+        padding: 13px;
+        border-radius: 5px;
+    }
+
+    .button {
+        visibility: hidden;
+    }
+
+    .alert {
+        font-family: sketchnote-text, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5rem;
+    }
 }
