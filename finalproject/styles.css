@@ -18,8 +18,17 @@
     color: #FFBFB7;
 }
 
-/*grid styling*/
+#wrapper #firstGraphic, #wrapper #secondGraphic, #wrapper #thirdGraphic {
+    display: flex;
+    flex-direction: column;
+}
 
+img {
+    align-self: center;
+    object-fit: contain;
+}
+
+/*grid styling*/
 #startHere {
     width: 0;
     height: 0;
@@ -40,10 +49,12 @@
 
 #secondGraphic {
     grid-area: second;
+
 }
 
 #thirdGraphic {
     grid-area: third;
+
 }
 
 #thanksPage {
