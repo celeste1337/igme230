@@ -20,5 +20,4 @@ $("#thirdGraphic .button").click(function() {
         $("#thirdGraphic object").css({filter: "brightness(100%)"});
         lightsOn = true;
     }
-
 });

@@ -177,10 +177,20 @@ object {
     margin-top: 100px;
 }
 
-#thanksPage {
+#thanksPage h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#thanksPage p, #thanksPage ul li {
+    font-family: sans-serif;
+    width: 60%;
+    margin: auto;
+    font-size: 1.3rem;
+    text-align: left;
 }
 
 /* small screen stuff */
@@ -203,5 +213,9 @@ object {
         font-weight: 500;
         font-style: normal;
         font-size: 1.5rem;
+    }
+
+    #navButtons {
+        visibility: hidden;
     }
 }

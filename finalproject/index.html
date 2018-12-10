@@ -22,8 +22,7 @@
 
         <div id="welcomePage">
             <h1>Howdy!</h1>
-            <p>This is my final project for IGME230. I'm using the PixiJS framework. Hover and click on stuff you want
-                to know more about. Take a (short) journey with me!</p>
+            <p>This is my final project for IGME230. I'm using the PixiJS framework. Let's go click on stuff! Take a (short) journey with me!</p>
 
             <a href="#firstGraphic" class="button">Let's begin</a>
 
@@ -34,7 +33,7 @@
 
         <div id="firstGraphic">
 
-            
+
             <img src="media/bg1.png">
             <a href="#secondGraphic" class="button">Next</a>
         </div>
@@ -42,15 +41,15 @@
 
         <div id="secondGraphic">
 
-            
+
             <img src="media/bg2.png" id="background" alt="a cracked wall">
             <img src="media/portraitbg.png" id="portraitbg" alt="background of the portrait">
             <svg height="100" width="100">
-                <circle cx="60" cy="60" r="40"fill="white" />
+                <circle cx="60" cy="60" r="40" fill="white" />
             </svg>
-            
-                
-            
+
+
+
             <img src="media/portrait.png" id="portrait" alt="portrait of a girl">
             <img src="media/frame.png" id="frame" alt="frame of the portrait">
             <a href="#thirdGraphic" class="button">Next</a>
@@ -59,7 +58,7 @@
 
         <div id="thirdGraphic">
 
-            
+
             <img src="media/bg3.png">
             <object data="media/laptop.svg" type="image/svg+xml"></object>
             <button type="button" class="button">Turn Off Lights</button>
@@ -71,7 +70,47 @@
         <div id="thanksPage">
 
             <h2>Documentation</h2>
-            <p>I used a lot in this project!</p>
+            <p>I used a lot in this project! <br>
+                Audience: Anyone looking for something to waste some time and possible employers.<br>
+                Goal: Create 3 “scenes” to convey different feelings, but with the same art style and “feeling” in
+                terms of interactivity. My ultimate goal is to convey a moment in time instead of show something fancy.
+                I want it to convey my personal art style while retaining the functionality that makes it simple and
+                satisfying to use.<br>
+
+                How/When/Why: Ideally, they’d come upon my website through looking at my portfolio. I’d also consider
+                what I wanted to make as a “game”, so maybe if they were looking for things on itch.io they could find
+                my graphics! I hope they would find my site when they look at my portfolio, or want to look at my web
+                development skills for a co-op.<br>
+                I wanted this website to feel sketchy, messy, and exactly reflect my art style (quick doodles on the
+                corners of notes). I also wanted it to be casual, which I think is reflected in the typeface choices. I
+                don't really want to give the impression that anything is serious or too stiff. Web design is fun! All
+                my colors were meant to be dreamy-cute and fun. I think pink is a great color!</p>
+            <p>I used (in no particular order):</p>
+            <ul>
+                <li>Everything that the PixiJS tutorials/examples/documentation folks offer on their website, but
+                    particularly the tutorial by kittykatattack. Almost all of that is verbatim from her tutorial, with
+                    variable names changed, just because I hadn't used Pixi before.</li>
+                <li>Stuff on object-fit I got from StackOverflow and MDN.</li>
+                <li>SVG styling help from StackOverflow (mostly the fact that you can do CSS styling with jQuery on
+                    SVGs).</li>
+                <li>The jQuery docs themselves!</li>
+                <li>An extreme amount of w3schools and MDN, especially for scroll-behavior.</li>
+            </ul>
+            <p>In terms of above and beyond, most of my stuff came from just learning the PixiJS docs. I spent about 4
+                hours learning about renderers and everything that Pixi is built on and used a jQuery offset to place
+                the immensely large canvas so it wouldn't start on the first page. Besides that, I think the horizontal
+                site and the cool scroll behavior stuff is interesting. I thought about having "one" site with all the
+                graphics immensely off the page then flying in with CSS transitions, but ultimately scroll-behavior and
+                id tags were way easier, which I didn't know about before!<br>
+                There were a lot of things I struggled with on this project. I really didn't understand jQuery as much
+                as I thought I did, and this project really pushed my limits on understanding how jQuery actually
+                works. I also got a very quick lesson on how pixiJS handles multiple canvases (it doesn't), so I really
+                had to figure out how to recover from a lot of lost time.<br> Project by Celeste Yost for IGME230.
+                <a href="media/wireframe1.JPG" alt="wireframe 1" target="_blank">Click here to open my first wireframe.</a>
+                <a href="media/wirefram2.JPG" alt="wireframe 2" target="_blank">Click here to open my other wireframe.</a>
+            </p>
+            
+
             <a href="#startHere" class="button">Back to the Beginning</a>
         </div>
         <!--end first graphic-->
@@ -82,7 +121,7 @@
                 <li><a href="#firstGraphic">1</a></li>
                 <li><a href="#secondGraphic">2</a></li>
                 <li><a href="#thirdGraphic">3</a></li>
-                
+
                 <li><a href="#thanksPage">Docs</a></li>
             </ul>
         </div>
