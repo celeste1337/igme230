@@ -1,8 +1,4 @@
-//onload
-
-
-//assign class to current position
-//$( "#navButtons" ).find( "li" ).eq().addClass( "active" );
+//the insanity that is pixijs
 
 let app1Coords = $("#firstGraphic img").offset();
 console.log(app1Coords.left);
