@@ -28,15 +28,21 @@ $("canvas").offset(app1Coords); //scoots the canvas element to the position of t
 //load an image and run the `setup` function when it's done
 loader
   .add("media/coffeemug.png")
+  .add("media/umbrella.png")
   .load(setup);
 
 //This `setup` function will run when the image has loaded
 function setup() {
-
-  //Create the cat sprite
+  //mug sprite
   let mug = new Sprite(resources["media/coffeemug.png"].texture);
   mug.x = 550;
   mug.y = 340;
-  //Add the cat to the stage
   app1.stage.addChild(mug);
+
+    //umbrella sprite
+    let umbrella = new Sprite(resources["media/umbrella.png"].texture);
+    umbrella.x = 675;
+    umbrella.y = 250;
+    app1.stage.addChild(umbrella);
+
 }
