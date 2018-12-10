@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "welcome first second third thanks" ". . circles . .";
     /*grid styling donezo, other styling below*/
-    background-color: #A2666F;
+    background-color: #452a2f;
     color: #FFBFB7;
 }
 
@@ -73,7 +73,7 @@ img {
 #navButtons li {
    display: inline-flex;
     align-items: center;
-    background-color: #FFBFB7;
+    background-color: #830f00;
     border: 1px solid #4A4063;
     padding: 4px 9px;
 }
