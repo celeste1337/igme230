@@ -26,11 +26,20 @@ document.body.appendChild(app1.view);
 $("canvas").offset(app1Coords); //scoots the canvas element to the position of the first image
 
 //text stuff
-var descriptionText = new PIXI.Text('');
+var style = new PIXI.TextStyle({
+  fontFamily: 'Arial',
+  fontSize: 20,
+  fill: '#fcf4ff', // gradient
+  stroke: '#512b60',
+  strokeThickness: 1.5,
+  wordWrap: true,
+  wordWrapWidth: 650
+});
+var descriptionText = new PIXI.Text('',style);
 descriptionText.x = 30;
-descriptionText.y = 490;
-
+descriptionText.y = 530;
 app1.stage.addChild(descriptionText);
+
 
 //load an image and run the `setup` function when it's done
 loader
