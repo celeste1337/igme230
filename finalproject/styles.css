@@ -67,22 +67,27 @@ img {
     grid-area: circles;
     position: fixed;
     bottom: 0;
+    left: 43vw;
 }
 
 #navButtons li {
    display: inline-flex;
     align-items: center;
+    background-color: #FFBFB7;
+    border: 1px solid #4A4063;
+    padding: 4px 9px;
 }
 
 #navButtons li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.active {
-    background-color: white;
-    color: black;
+#navButtons li:hover {
+    color: #FFBFB7;
+    background-color: #4A4063;
 }
+
 
 #screenSmall {
     visibility: hidden;
@@ -122,6 +127,10 @@ p, a {
     position: relative;
 }
 
+#secondGraphic a {
+    margin-top: 650px;
+}
+
 #background {
     position: absolute;
     z-index: 0;
@@ -143,6 +152,7 @@ svg {
 
 #thirdGraphic {
     position: relative;
+    display: inline-block;
 }
 
 object {
@@ -150,8 +160,8 @@ object {
     position: absolute;
     width: 40%;
     height: 40%;
-    margin-left: 20vw;
-    margin-top: 83px;
+    margin-left: 22vw;
+    margin-top: 70px;
     left: 0;
 }
 
@@ -167,7 +177,11 @@ object {
     margin-top: 100px;
 }
 
-
+#thanksPage {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* small screen stuff */
 @media screen and (max-width: 411px) {
