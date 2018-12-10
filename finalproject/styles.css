@@ -137,10 +137,23 @@ p, a {
 svg {
     z-index: 2;
     position: absolute;
-    margin-left: 45.6vw;
+    margin-left: 45.8vw;
     margin-top: 190px;
 }
 
+#thirdGraphic {
+    position: relative;
+}
+
+object {
+    z-index: 2;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-left: 20vw;
+    margin-top: 83px;
+    left: 0;
+}
 
 #portrait {
     position: absolute;
