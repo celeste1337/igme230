@@ -3,18 +3,19 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 #wrapper {
     display: grid;
     width: 500vw;
     height: 100vh;
-    grid-template-rows: auto;
+    grid-template-rows: 11fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "welcome first second third thanks";
+    grid-template-areas: "welcome first second third thanks" ". . circles . .";
     /*grid styling donezo, other styling below*/
     background-color: #A2666F;
-    color: #FFBFB7
+    color: #FFBFB7;
 }
 
 /*grid styling*/
@@ -47,6 +48,27 @@
 
 #thanksPage {
     grid-area: thanks;
+}
+
+#navButtons {
+    grid-area: circles;
+    position: fixed;
+    bottom: 0;
+}
+
+#navButtons li {
+   display: inline-flex;
+    align-items: center;
+}
+
+#navButtons li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: white;
+    color: black;
 }
 
 #screenSmall {

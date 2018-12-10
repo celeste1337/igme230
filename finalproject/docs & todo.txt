@@ -1,5 +1,7 @@
 TO DO:
 - make all the assets
+    - icons for first and last
+    - person for second
 - css animations
 - disable scroll
 - pixijs stuff
